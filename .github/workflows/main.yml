@@ -30,7 +30,7 @@ jobs:
       
       - name: Build with Gradle
         run: ./abc/zooTopic/gradlew build
-        shell: bash
+        shell: bash 
         
       - name: Make Zip File
         run: zip -qq -r ./$GITHUB_SHA.zip .
