@@ -24,7 +24,7 @@ jobs:
           java-version: 11
           
       - name: Grant execute permission for gradlew525
-        run: pwd
+        run: ll
         shell: bash
 
       - name: Grant execute permission for gradlew
