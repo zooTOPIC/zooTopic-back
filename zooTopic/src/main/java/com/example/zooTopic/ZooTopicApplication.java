@@ -1,6 +1,5 @@
 package com.example.zooTopic;
 
-import com.example.zooTopic.controller.memberController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,10 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ZooTopicApplication {
 
-	private memberController MemberController;
+	private com.example.zooTopic.controller.MemberController MemberController;
 
 	@Autowired
-	public ZooTopicApplication(memberController MemberController) {
+	public ZooTopicApplication(com.example.zooTopic.controller.MemberController MemberController) {
 		this.MemberController = MemberController;
 	}
 	public static void main(String[] args) {
