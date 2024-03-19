@@ -24,7 +24,7 @@ jobs:
           java-version: 11
           
       - name: cd zootipic
-        run: cd .abc/zooTopic/
+        run: cd ./abc/zooTopic/
         shell: bash
        
 
