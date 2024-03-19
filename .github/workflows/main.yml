@@ -29,7 +29,7 @@ jobs:
         shell: bash
       
       - name: Build with Gradle
-        run: sudo ./abc/zooTopic/gradlew build
+        run: sudo ./gradlew build
         shell: bash
         
       - name: Make Zip File
