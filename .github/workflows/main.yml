@@ -3,17 +3,17 @@ name: Build and Deploy Spring Boot to AWS EC2
 
 on:
   push:
-    branches: [ "sy" ]
+    branches: [ "main" ]
 
 env:
   PROJECT_NAME: zooTopic
   BUCKET_NAME: cicdzootopic
-  CODE_DEPLOY_APP_NAME: cicdapp
-  DEPLOYMENT_GROUP_NAME: cicdapp_deploy
+  CODE_DEPLOY_APP_NAME: cicdappzoo
+  DEPLOYMENT_GROUP_NAME: cicdapp_deployzoo
 
 jobs:
   build:
-    runs-on: CentOS-7
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
