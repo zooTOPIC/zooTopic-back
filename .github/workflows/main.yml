@@ -23,16 +23,6 @@ jobs:
         with:
           java-version: 11
 
-
-
-      - name: Make application.yml
-        run: |
-          cd ./src/main
-          mkdir resources
-          cd ./resources
-          touch ./application.yml
-          echo "${{ secrets.APPLICATION }}" > ./application.yml
-        shell: bash  
           
 
       - name: Grant execute permission for gradlew
