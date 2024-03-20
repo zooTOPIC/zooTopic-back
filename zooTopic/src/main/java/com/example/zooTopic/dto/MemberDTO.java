@@ -1,28 +1,13 @@
 package com.example.zooTopic.dto;
 
-import com.example.zooTopic.entity.MemberEntity;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
-//lombok dependency추가
 @Getter
 @Setter
 @NoArgsConstructor
-@ToString
-public class MemberDTO { //회원 정보를 필드로 정의
-    private String UserEmail;
-    private String UserName;
-    private String UserPwd;
-
-    //lombok 어노테이션으로 getter,setter,생성자,toString 메서드 생략 가능
-
-    public static MemberDTO toMemberDTO(MemberEntity memberEntity){
-        MemberDTO memberDTO = new MemberDTO();
-        memberDTO.setUserEmail(memberEntity.getUserEmail());
-        memberDTO.setUserPwd(memberEntity.getUserPwd());
-        memberDTO.setUserName(memberEntity.getUserName());
-        return memberDTO;
-    }
+@AllArgsConstructor
+public class MemberDTO {
+    private String userEmail; // 데이터베이스 컬럼명에 맞게 수정
+    private String userName; // 데이터베이스 컬럼명에 맞게 수정
+    private String userPwd; // 데이터베이스 컬럼명에 맞게 수정
 }

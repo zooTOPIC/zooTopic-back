@@ -23,7 +23,7 @@ public class MemberController {
         return "save";
     }
 
-    @PostMapping("/member/save")    // name값을 requestparam에 담아온다
+    @PostMapping("/member/save")
     public String save(@ModelAttribute MemberDTO memberDTO) {
         System.out.println("MemberController.save");
         System.out.println("memberDTO = " + memberDTO);
@@ -31,4 +31,6 @@ public class MemberController {
 
         return "index";
     }
+
+
 }

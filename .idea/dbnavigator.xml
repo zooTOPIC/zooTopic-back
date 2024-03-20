@@ -17,22 +17,21 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="3f7f664f-cf7a-46c3-a8cd-34ed46311fb8">
-      <console name="userData" type="STANDARD" schema="userData" session="Main"><![CDATA[select * from UserData;]]></console>
+      <console name="userData" type="STANDARD" schema="userData" session="Main"><![CDATA[SELECT * FROM userData;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="3f7f664f-cf7a-46c3-a8cd-34ed46311fb8" object-ref="consoles/userData" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="3f7f664f-cf7a-46c3-a8cd-34ed46311fb8" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="3f7f664f-cf7a-46c3-a8cd-34ed46311fb8" dataset="userData.userData" active-filter-id="" />
+    <filter-actions connection-id="3f7f664f-cf7a-46c3-a8cd-34ed46311fb8" dataset="userData.user_data" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
