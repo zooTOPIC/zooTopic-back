@@ -34,7 +34,7 @@ public class MemberController {
 
         // 리다이렉션을 위한 응답을 생성하고, 리다이렉션할 URL을 Location 헤더에 설정
         HttpHeaders headers = new HttpHeaders();
-        headers.setLocation(URI.create("http://172.16.221.58:3000/login"));
+        headers.setLocation(URI.create("http://10.0.13.75:3000/login"));
 
         // HTTP 상태 코드 302(Found)를 사용하여 리다이렉션을 수행
         return new ResponseEntity<>(headers, HttpStatus.FOUND);
@@ -53,14 +53,14 @@ public class MemberController {
 //            // login 성공
 //            session.setAttribute("loginEmail", loginResult.getUserEmail());
 //            HttpHeaders headers = new HttpHeaders();
-//            headers.setLocation(URI.create("http://172.16.221.58:3000/"));
+//            headers.setLocation(URI.create("http://10.0.13.75:3000/"));
 //
 //            // HTTP 상태 코드 302(Found)를 사용하여 리다이렉션을 수행
 //            return String.valueOf(new ResponseEntity<>(headers, HttpStatus.FOUND));
 //        } else {
 //            // login 실패
 //            HttpHeaders headers = new HttpHeaders();
-//            headers.setLocation(URI.create("http://172.16.221.58:3000/login"));
+//            headers.setLocation(URI.create("http://10.0.13.75:3000/login"));
 //
 //            // HTTP 상태 코드 302(Found)를 사용하여 리다이렉션을 수행
 //            return String.valueOf(new ResponseEntity<>(headers, HttpStatus.FOUND));
